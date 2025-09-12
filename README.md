@@ -102,6 +102,29 @@ print(x)       # 3
 
 ---
 
+# Bitwise Operators Truth Table
+
+This table shows how bitwise operators work on two single-bit inputs `A` and `B`.
+
+| A | B | A AND B | A OR B | A XOR B | ~A (1-bit) | A << 1 | A >> 1 |
+|---|---|----------|---------|----------|-------------|---------|---------|
+| 0 | 0 |    0     |    0    |    0     |      1      |    0    |    0    |
+| 0 | 1 |    0     |    1    |    1     |      1      |    0    |    0    |
+| 1 | 0 |    0     |    1    |    1     |      0      |    0    |    0    |
+| 1 | 1 |    1     |    1    |    0     |      0      |    0    |    1    |
+
+---
+
+### Explanation
+
+- **A AND B (`&`)** → Result is `1` only if both inputs are `1`.  
+- **A OR B (`|`)** → Result is `1` if at least one input is `1`.  
+- **A XOR B (`^`)** → Result is `1` if inputs are different.  
+- **~A (NOT)** → Inverts the bit: `0 → 1`, `1 → 0`.  
+- **A << 1 (Left Shift)** → Shifts bits to the left, fills with `0`, equivalent to multiplying by 2.  
+- **A >> 1 (Right Shift)** → Shifts bits to the right, fills with `0` (for positive numbers), equivalent to integer division by 2.  
+
+
 ## ✅ Summary
 - Assignment operators are essential in Python.  
 - They make code **shorter, cleaner, and more readable**.  
